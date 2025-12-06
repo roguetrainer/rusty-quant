@@ -55,8 +55,14 @@ Most quants are trained to manage risk at the **institution level** (Micro-prude
 
 To stop just "obeying the rules" and start understanding the physics of the market collapse:
 
-* [**Systemic Risk Models in a Nutshell**](./systemic_risk_models.md)  
+* [**Systemic Risk Models in a Nutshell**](https://github.com/roguetrainer/systemic-risk/blob/main/docs/systemic-risk-overview.md)  
   * A primer on network theory, contagion, and why minimizing your bank's VaR might actually increase the system's fragility.
+* [**Case Study - GPU Financial Complex**](https://github.com/roguetrainer/systemic-risk/blob/main/docs/gpu-financial-complex.md)  
+  * Are there lessons to be learned from the 2008 GFC that can be applied to understanding the 2025-26 AI bubble? Is it different this time?
+
+### More systemic risk repos
+[systemic-risk](https://github.com/roguetrainer/systemic-risk) | [systemic-risk-intro](https://github.com/roguetrainer/systemic-risk-intro) | [systemic-risk-metrics](https://github.com/roguetrainer/systemic-risk-metrics) | [silicon-subprime](https://github.com/roguetrainer/silicon-subprime) | [too-big-to-teraflop](https://github.com/roguetrainer/too-big-to-teraflop) | 
+ [systemic-risk/docs/systemic-risk-overview](https://github.com/roguetrainer/systemic-risk/blob/main/docs/systemic-risk-overview.md).
 
 ## **5\. Future Proofing: The Quantum Horizon**
 
@@ -76,4 +82,7 @@ While still speculative, the next regime shift will likely be hardware-driven.
 * For the **Yields**, see tensor-yield.  
 * For the **Risk**, see deep-xva and quantlib-xva-engine.  
 * For the **Future**, see quantum-computing-for-finance.  
-* For the **Big Picture**, see [Systemic Risk](./systemic_risk_models.md).
+* For the **Big Picture**, see [Systemic Risk](https://github.com/roguetrainer/systemic-risk)
+
+### Navigation
+ [rusty-quant](https://github.com/roguetrainer/rusty-quant) | [around-the-world-in-81-repos](https://github.com/roguetrainer/around-the-world-in-81-repos)
