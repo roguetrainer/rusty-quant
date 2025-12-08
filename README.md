@@ -32,10 +32,9 @@ Below is the reference implementation stack for navigating this landscape, maint
 
 Before you can price exotics, you must price the baseline correctly. The single-curve world is dead; we now live in a multi-curve, collateral-dependent reality.
 
-* [**tensor-yield**](https://www.google.com/search?q=https://github.com/roguetrainer/tensor-yield)  
+* [**tensor-yield**](https://github.com/roguetrainer/tensor-yield)  
   * *The Core Implementation.* This repository contains the modern approach to yield curve construction and calibration. It replaces legacy curve stripping with tensor-based approaches suitable for automatic differentiation and complex optimization landscapes.  
-* [**tensor-scalpel**](https://www.google.com/search?q=https://github.com/roguetrainer/tensor-scalpel)  
-  * Precise diagnostics and surgical tooling for tensor operations within financial contexts.
+
 
 ## **2\. The XVA Challenge**
 
@@ -53,6 +52,9 @@ When the dimensionality of the risk factors explodes (as it does in XVA and hybr
 * [**tensor\_networks\_finance**](https://github.com/roguetrainer/tensor_networks_finance)  
   * Applying Tensor Train (TT) decompositions and other tensor network geometries to high-dimensional financial problems. This is the cutting edge of efficient representation for financial states.
 
+* [**tensor-scalpel**](https://github.com/roguetrainer/tensor-scalpel)  
+  * Precise diagnostics and surgical tooling for tensor operations for foundation models (which might be used for financial ML applications)
+
 ## **4\. The Holistic View: Systemic Risk**
 
 Most quants are trained to manage risk at the **institution level** (Micro-prudential). However, modern regulations (CCAR, Basel III/IV) are designed to safeguard the **global financial system** (Macro-prudential).
@@ -66,7 +68,7 @@ To stop just "obeying the rules" and start understanding the physics of the mark
 
 ### More systemic risk repos
 [systemic-risk](https://github.com/roguetrainer/systemic-risk) | [systemic-risk-intro](https://github.com/roguetrainer/systemic-risk-intro) | [systemic-risk-metrics](https://github.com/roguetrainer/systemic-risk-metrics) | [silicon-subprime](https://github.com/roguetrainer/silicon-subprime) | [too-big-to-teraflop](https://github.com/roguetrainer/too-big-to-teraflop) | [systemic-risk/docs/](https://github.com/roguetrainer/systemic-risk/blob/main/docs/) {
- [systemic-risk-overview](https://github.com/roguetrainer/systemic-risk/blob/main/docs/systemic-risk-overview.md) | [gpu-financial-complex](https://github.com/roguetrainer/systemic-risk/blob/main/docs/gpu-financial-complex)}
+ [systemic-risk-overview](https://github.com/roguetrainer/systemic-risk/blob/main/docs/systemic-risk-overview.md) | [gpu-financial-complex](https://github.com/roguetrainer/systemic-risk/blob/main/docs/gpu-financial-complex.md)}
 
 ---
 
