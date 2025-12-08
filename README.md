@@ -28,7 +28,7 @@ The post-GFC landscape is defined by three major frictions that did not exist (o
 
 Below is the reference implementation stack for navigating this landscape, maintained by [roguetrainer](https://github.com/roguetrainer).
 
-## **1\. The Foundation: Modern Curve Construction**
+## **1. The Foundation: Modern Curve Construction**
 
 Before you can price exotics, you must price the baseline correctly. The single-curve world is dead; we now live in a multi-curve, collateral-dependent reality.
 
@@ -36,14 +36,14 @@ Before you can price exotics, you must price the baseline correctly. The single-
   * *The Core Implementation.* This repository contains the modern approach to yield curve construction and calibration. It replaces legacy curve stripping with tensor-based approaches suitable for automatic differentiation and complex optimization landscapes.  
 
 
-## **2\. The XVA Challenge**
+## **2. The XVA Challenge**
 
 Valuation Adjustments (XVA) are not a post-trade reporting add-on; they are integral to the price.
 
 * [**quantlib-xva-engine**](https://github.com/roguetrainer/quantlib-xva-engine)  
   * A rigorous implementation of XVA frameworks utilizing the industry-standard QuantLib. This represents the "Classic Modern" approach—using established libraries to solve new regulatory problems.
 
-## **3\. The Computational Leap (Deep Learning & Tensors)**
+## **3. The Computational Leap (Deep Learning & Tensors)**
 
 When the dimensionality of the risk factors explodes (as it does in XVA and hybrid models), standard methods fail. We must turn to approximation via Deep Learning and physics-inspired Tensor Networks.
 
@@ -55,9 +55,13 @@ When the dimensionality of the risk factors explodes (as it does in XVA and hybr
 * [**tensor-scalpel**](https://github.com/roguetrainer/tensor-scalpel)  
   * Precise diagnostics and surgical tooling for tensor operations for foundation models (which might be used for financial ML applications)
 
-## **4\. The Holistic View: Systemic Risk**
+## **4. The Holistic View: Systemic Risk**
 
 Most quants are trained to manage risk at the **institution level** (Micro-prudential). However, modern regulations (CCAR, Basel III/IV) are designed to safeguard the **global financial system** (Macro-prudential).
+
+> "Practical ~~men~~ *microprudential risk managers* who believe themselves to be quite exempt from any intellectual influence, are usually the slaves of some defunct ~~economist~~ *macroprudential regulator*."
+> 
+> — John Maynard Keynes (mostly)
 
 To stop just "obeying the rules" and start understanding the physics of the market collapse:
 
@@ -65,6 +69,10 @@ To stop just "obeying the rules" and start understanding the physics of the mark
   * A primer on network theory, contagion, and why minimizing your bank's VaR might actually increase the system's fragility.
 * [**Case Study - GPU Financial Complex**](https://github.com/roguetrainer/systemic-risk/blob/main/docs/gpu-financial-complex.md)
   * Are there lessons to be learned from the 2008 GFC that can be applied to understanding the 2025-26 AI bubble? Is it different this time?
+* [**silicon-subprime**](https://github.com/roguetrainer/silicon-subprime)
+  * Quant risk models simulating the AI bubble. Stress-testing GPU asset decay and private credit contagion using the IMF's 'Four Ls' systemic risk framework. Includes interactive simulations to make the material more engaging.
+* [**too-big-to-teraflop**](https://github.com/roguetrainer/too-big-to-teraflop)
+  * Invest in the AI bubble - but ignore Hyman Minsky at your peril. An interactive economic simulation game teaching financial bubble dynamics through gameplay, exploring Minsky's Financial Instability Hypothesis.
 
 ### More systemic risk repos
 [systemic-risk](https://github.com/roguetrainer/systemic-risk) | [systemic-risk-intro](https://github.com/roguetrainer/systemic-risk-intro) | [systemic-risk-metrics](https://github.com/roguetrainer/systemic-risk-metrics) | [silicon-subprime](https://github.com/roguetrainer/silicon-subprime) | [too-big-to-teraflop](https://github.com/roguetrainer/too-big-to-teraflop) | [systemic-risk/docs/](https://github.com/roguetrainer/systemic-risk/blob/main/docs/) {
@@ -72,7 +80,7 @@ To stop just "obeying the rules" and start understanding the physics of the mark
 
 ---
 
-## **5\. Future Proofing: The Quantum Horizon**
+## **5. Future Proofing: The Quantum Horizon**
 
 While still speculative, the next regime shift will likely be hardware-driven.
 
