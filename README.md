@@ -3,7 +3,7 @@
 **"Everything you knew in 2007 is now a special case of something more complex."**
 
 ---
-![RQ](./rusty-quant.png)
+![RQ](./img/rusty-quant.png)
 ---
 
 "Modern" refers to the regime shift following the 2008 Global Financial Crisis (GFC). If your toolkit is strictly Black-Scholes and closed-form solutions, you are rusty.
@@ -21,6 +21,10 @@ The post-GFC landscape is defined by three major frictions that did not exist (o
 1. **Counterparty Risk & Funding** (The XVA World)  
 2. **Computational Explosion** (The need for massive scaling or approximation)  
 3. **High-Dimensionality** (Moving beyond standard Monte Carlo)
+
+---
+![Landscape](./img/post-gfc.jpg)
+---
 
 Below is the reference implementation stack for navigating this landscape, maintained by [roguetrainer](https://github.com/roguetrainer).
 
@@ -57,12 +61,14 @@ To stop just "obeying the rules" and start understanding the physics of the mark
 
 * [**Systemic Risk Models in a Nutshell**](https://github.com/roguetrainer/systemic-risk/blob/main/docs/systemic-risk-overview.md)  
   * A primer on network theory, contagion, and why minimizing your bank's VaR might actually increase the system's fragility.
-* [**Case Study - GPU Financial Complex**](https://github.com/roguetrainer/systemic-risk/blob/main/docs/gpu-financial-complex.md)  
+* [**Case Study - GPU Financial Complex**](https://github.com/roguetrainer/systemic-risk/blob/main/docs/gpu-financial-complex.md)
   * Are there lessons to be learned from the 2008 GFC that can be applied to understanding the 2025-26 AI bubble? Is it different this time?
 
 ### More systemic risk repos
 [systemic-risk](https://github.com/roguetrainer/systemic-risk) | [systemic-risk-intro](https://github.com/roguetrainer/systemic-risk-intro) | [systemic-risk-metrics](https://github.com/roguetrainer/systemic-risk-metrics) | [silicon-subprime](https://github.com/roguetrainer/silicon-subprime) | [too-big-to-teraflop](https://github.com/roguetrainer/too-big-to-teraflop) | [systemic-risk/docs/](https://github.com/roguetrainer/systemic-risk/blob/main/docs/) {
  [systemic-risk-overview](https://github.com/roguetrainer/systemic-risk/blob/main/docs/systemic-risk-overview.md) | [gpu-financial-complex](https://github.com/roguetrainer/systemic-risk/blob/main/docs/gpu-financial-complex)}
+
+---
 
 ## **5\. Future Proofing: The Quantum Horizon**
 
@@ -75,6 +81,33 @@ While still speculative, the next regime shift will likely be hardware-driven.
   * **Quantum Machine Learning:** For regime detection and optimization landscapes that are intractable on classical silicon.
 
 *Keep an eye on this space. The Rusty Quant ignores hardware; the Modern Quant optimizes for GPU; the Future Quant prepares for QPU.*
+
+
+
+## **🦀 Rust Levels: Self-Assessment Guide**
+
+How rusty is your quant toolkit? Three levels of knowledge decay:
+
+### **1. Surface Rust** (Squeaky when you move)
+
+* You know the classics but haven't kept up with the latest papers
+* Familiar with transformers but not attention mechanisms in market microstructure
+* Understands Black-Scholes but not neural SDEs or physics-informed neural networks for derivatives pricing
+
+### **2. Structural Corrosion** (Major pitting & weakening - needs sanding & Bondo)
+
+* Still using GARCH models while the field has moved to deep learning volatility forecasting
+* Thinks HFT is just about low latency, unaware of learned market making and adversarial order flow
+* Last serious exposure was pre-2020; missed the ML revolution in factor investing
+
+### **3. Seized Solid** (Frozen solid - soak in phosphoric acid & penetrating oil)
+
+* Believes markets are efficient and alpha is dead
+* Unaware that GPUs are now essential infrastructure for systematic trading
+* Thinks "quant" still means Excel VBA and basic regression models
+
+---
+
 
 ### **Navigation**
 

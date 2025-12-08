@@ -3,14 +3,14 @@
 **"Everything you knew in 2007 is now a special case of something more complex."**
 
 ---
-![RQ](./rusty-quant.png)
+![RQ](../img/rusty-quant.png)
 ---
 
 If your quantitative memory fades around the time of the Global Financial Crisis (GFC), you are likely remembering a world where "risk-free" meant LIBOR, counterparty risk was a rounding error, and C++ was the only language that mattered.
 
 This document bridges the gap between the "Classic" era and the "Modern" era (2025), explaining why the ground shifted and how the tooling has evolved.
 
-## **1\. The Paradigm Shift: When Vanilla Became Exotic**
+## **1. The Paradigm Shift: When Vanilla Became Exotic**
 
 ### **Pre-2008: The "Single Curve" World**
 
@@ -24,7 +24,7 @@ Before Lehman Brothers collapsed, the quantitative world was relatively clean:
 
 The crisis revealed that major banks *could* default. This shattered the core assumption of derivatives pricing. Suddenly, a simple **Interest Rate Swap (IRS)** wasn't just a bet on rates; it was a bet on your counterparty surviving to pay you.
 
-* **Dual Curve Pricing:** As detailed in theory\_landscape.md, we realized LIBOR contained credit risk. We moved to **OIS Discounting** (Overnight Index Swaps) for collateralized trades because OIS rates (Fed Funds, EONIA) better reflected the risk-free rate of collateral.  
+* **Dual Curve Pricing:** As detailed in theory_landscape.md, we realized LIBOR contained credit risk. We moved to **OIS Discounting** (Overnight Index Swaps) for collateralized trades because OIS rates (Fed Funds, EONIA) better reflected the risk-free rate of collateral.  
 * **Basis Spreads Explosion:** The spread between LIBOR 3M and LIBOR 6M (the "Tenor Basis"), which used to be negligible (fractions of a basis point), blew out to 50+ bps. A 3M vs 6M basis swap became a non-trivial instrument to model.
 
 ### **"Vanilla is the New Exotic"**
@@ -36,9 +36,9 @@ Because of these basis spreads and the need for rigorous collateral modelling, p
 3. Cross-Currency Basis Curves (if FX is involved).  
 4. Credit/Funding Adjustments (XVA).
 
-The mathematical machinery required to price a "simple" swap in 2025 is more complex than what was used for some exotic options in 2005\.
+The mathematical machinery required to price a "simple" swap in 2025 is more complex than what was used for some exotic options in 2005.
 
-## **2\. The Rise of the XVA Desk**
+## **2. The Rise of the XVA Desk**
 
 If the 2008 crisis had a mascot, it would be **CVA (Credit Valuation Adjustment)**.
 
@@ -65,7 +65,7 @@ For deep learning approaches to these problems, see:
 * [**deep-xva**](https://github.com/roguetrainer/deep-xva): Using Neural Networks to approximate the CVA pricing function.  
 * [**quantlib-xva-engine**](https://github.com/roguetrainer/quantlib-xva-engine): Traditional Monte Carlo XVA engines.
 
-## **3\. Tooling Revolution: Beyond C++**
+## **3. Tooling Revolution: Beyond C++**
 
 In 2008, if you wanted speed, you wrote C++. If you wanted prototypes, you wrote Excel/VBA or Matlab. Python was a niche scripting glue.
 
@@ -84,7 +84,7 @@ Python is now the *lingua franca* of quantitative finance.
 
 See [**tensor-scalpel**](https://www.google.com/search?q=https://github.com/roguetrainer/tensor-scalpel) for examples of high-performance tensor operations that might leverage these modern backends.
 
-## **4\. Regulation: The Quant as Compliance Officer**
+## **4. Regulation: The Quant as Compliance Officer**
 
 Pre-2008, regulation was often a "box-ticking" exercise for the back office. Post-2008, regulations drive the math itself.
 
@@ -98,7 +98,7 @@ Pre-2008, regulation was often a "box-ticking" exercise for the back office. Pos
 
 A quant today spends as much time optimizing **Regulatory Capital** as they do optimizing **P\&L**. A trade that looks profitable on a cash-flow basis might be rejected because its KVA (Capital Cost) makes the Return on Equity (RoE) negative.
 
-## **5\. Unification of Pricing and Risk (AAD)**
+## **5. Unification of Pricing and Risk (AAD)**
 
 Historically, "Pricing" (Front Office) and "Risk" (Middle Office) used different systems.
 
